@@ -2,22 +2,49 @@
 <!--
 Name: Trisha T.
 Date Created: 4/4/19
-Most recent revision: 4/5/19
+Most recent revision: 4/9/19
 -->
 <html lang ="en">
   <head>
     <title>Trisha's Portfolio</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <style>
+    caption {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+    }
+    table, th, td {
+      border: 1px solid #0d1f2d;
+      border-collapse: collapse;
+      padding: 5px 10px;
+    }
+    table {
+      width: 90%;
+      margin: auto;
+    }
+    tr {
+      height: 30px;
+    }
+    th {
+      background-color: #546a7b;
+      color: #f2eded;
+    }
+    tr:nth-child(odd) {
+      background-color: #e4c3ad;
+    }
+    </style>
   </head>
   <body>
     <header>
       <h1>Portfolio for Trisha T.</h1>
       <!--link href="teststyles.css" rel="stylesheet" type="text/css" / -->
-      <style>
+      <!-- <style>
       header, footer {
         background-color: black;
         color: white;
       }
-      </style>
+      </style> -->
     </header>
     <hr style ="border: thin dotted red;" />
     <nav class="border">
@@ -37,11 +64,14 @@ Most recent revision: 4/5/19
         <img src = "images/pusheendj.jpg" alt="pusheen dj" />
         <table>
           <caption>Employment History</caption>
+          <thead>
           <tr>
             <th>Years of Employment</th>
             <th>Title</th>
             <th>Company</th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
             <td>2019-Present</td>
             <td>Student/Apprentice</td>
@@ -57,6 +87,7 @@ Most recent revision: 4/5/19
             <td>Sales & Inventory Manager</td>
             <td>City Foundry</td>
           </tr>
+        </tbody>
         </table>
       </article>
       <article id="hobbies">
