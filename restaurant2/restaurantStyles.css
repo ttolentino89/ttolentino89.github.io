@@ -1,8 +1,17 @@
 body {
   background-color: oldlace;
+  /* background-image:url("picnic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
   font-family: 'Gloria Hallelujah', cursive;
   text-align: center;
 }
+
+.right-content {
+  text-align:right;
+}
+
+
 
 /* these will be for the buttons */
 /* nav {
