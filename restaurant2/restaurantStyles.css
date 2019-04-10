@@ -7,10 +7,27 @@ body {
   text-align: center;
 }
 
+
 .right-content {
   text-align:right;
 }
 
+.nav
+{
+  text-align:left;
+}
+
+header {
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+}
+
+/* header, footer {
+  padding: 5px
+} */
 
 
 /* these will be for the buttons */
