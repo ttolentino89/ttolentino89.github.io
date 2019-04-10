@@ -12,6 +12,10 @@ body {
   text-align:right;
 }
 
+hr {
+  border: none;
+}
+
 .nav
 {
   text-align:left;
