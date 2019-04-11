@@ -7,45 +7,41 @@ body {
   text-align: center;
 }
 
+/* img {
+  padding-top: 60px;
+} */
+
+.nav
+{
+  margin-top: 20px;
+  text-align:left;
+}
+
+.mainboy
+{
+  margin-top:40px;
+  padding-top: 60px;
+}
+
 
 .right-content {
   text-align:right;
+  margin-right: 20px;
 }
 
 hr {
   border: none;
 }
 
-.nav
-{
-  text-align:left;
-}
+
 
 header {
+  margin-top: 20px;
+  margin-right: 20px;
   text-align: right;
 }
 
 footer {
+  margin-top: 50px;
   text-align: center;
 }
-
-/* header, footer {
-  padding: 5px
-} */
-
-
-/* these will be for the buttons */
-/* nav {
-  border-top: thin #5b7d87 solid;
-  border-bottom: thin #5b7d87 solid;
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-nav .btn {
-  background-color: #5b7d87;
-  color: #fef9ff;
-}
-
-nav .btn:hover {
-  font-weight: bold;
-} */
