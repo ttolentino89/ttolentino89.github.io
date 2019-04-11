@@ -39,6 +39,15 @@ header {
   text-align: right;
 }
 
+/* header a:hover {
+  background-color: #fef9ff;
+  color: #5b7d87;
+}
+
+header a:visited {
+    color: #e4c3ad;
+} */
+
 footer {
   /* margin-top: 50px; */
   text-align: center;
