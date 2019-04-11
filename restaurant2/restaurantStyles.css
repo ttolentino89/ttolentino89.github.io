@@ -17,11 +17,11 @@ body {
   text-align:left;
 }
 
-.mainboy
+/* .mainboy
 {
   margin-top:40px;
   padding-top: 60px;
-}
+} */
 
 
 .right-content {
@@ -33,15 +33,13 @@ hr {
   border: none;
 }
 
-
-
 header {
-  margin-top: 20px;
-  margin-right: 20px;
+  /* margin-top: 20px;
+  margin-right: 20px; */
   text-align: right;
 }
 
 footer {
-  margin-top: 50px;
+  /* margin-top: 50px; */
   text-align: center;
 }

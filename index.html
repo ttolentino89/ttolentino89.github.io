@@ -7,27 +7,74 @@ Most recent revision: 4/5/19
 -->
 <html lang ="en">
   <head>
+<link href="https://fonts.googleapis.com/css?family=Poiret+One|Rock+Salt" rel="stylesheet">
     <title>Trisha's Portfolio</title>
   </head>
+<style>
+
+body {
+font-family: 'Rock Salt', cursive;
+/* background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(60,0,60,1)); */
+background-image: url("vaporwave.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+text-align:left;
+}
+
+.name {
+color: #FF5D73;
+text-align: right;
+padding-right: 30px;
+}
+
+.main {
+  /* background-color: black; */
+  /* background-blend-mode: lighten; */
+  font-family: 'Poiret One', cursive;
+  font-size: large;
+  margin-left: auto;
+  margin-right: auto;
+  /* height: 50%; */
+  width: 50%;
+  /* padding-left: 350px; */
+  /* padding-top: 200px; */
+}
+
+.links {
+  float: left;
+}
+
+.projects {
+  float: right;
+}
+
+a:visited {
+  color: hotpink;
+}
+
 </style>
 </head>
 
 <body>
-<h1>Trisha T.</h1>
-<div>
-<b>My Links:</b>
+<div class="name"><h1>Trisha T.</h1></div>
+<div class="main">
+<div class="links">
+<b>Links:</b>
   <ul>
-    <li><a href="portfolio/index.html">My Portfolio</a></li>
-    <li><a href="https://trishatolentino.home.blog/">My Blog</a></li>
-    <li><a href="https://github.com/ttolentino89">My GitHub</a></li>
-  </ul>
+    <li><a href="portfolio/index.html">Portfolio</a></li>
+    <li><a href="https://trishatolentino.home.blog/">Blog</a></li>
+    <li><a href="https://github.com/ttolentino89">GitHub</a></li>
+  </ul></div>
 <br />
+<div class="projects">
 <b>Projects:</b>
   <ol>
     <li><a href="restaurant/index.html">Restaurant Site</a></li>
     <li><a href="restaurant2/index.html">Restaurant Site with CSS</a></li>
     <li>Restaurant Site with JavaScript</li>
   </ol>
+</div>
 </div>
 </body>
 </html>
