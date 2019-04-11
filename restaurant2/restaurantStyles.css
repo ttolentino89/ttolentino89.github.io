@@ -5,17 +5,28 @@ body {
   background-size: cover; */
   font-family: 'Gloria Hallelujah', cursive;
   text-align: center;
+  /* margin: 0 auto; */
 }
 
 /* img {
   padding-top: 60px;
 } */
 
-.nav
+nav
 {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   text-align:left;
 }
+
+nav a:hover {
+font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+
 
 /* .mainboy
 {
@@ -49,6 +60,6 @@ header a:visited {
 } */
 
 footer {
-  /* margin-top: 50px; */
+  margin-top: 50px;
   text-align: center;
 }
