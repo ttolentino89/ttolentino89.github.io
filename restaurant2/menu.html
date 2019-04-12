@@ -4,9 +4,24 @@
     <link href="restaurantStyles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
   <style>
-  #drinks:img {
+
+#tastyTreats {
+  padding: 50px;
+}
+.logos {
     float:left;
+    margin: 50;
   }
+#drinkMenu {
+  float: left;
+}
+
+footer {
+    clear: left;
+    text-align: right;
+    margin-right: 50px;
+    padding-bottom: 50px;
+}
   </style>
   </head>
   <body>
@@ -14,15 +29,15 @@
       <h1>The Goodest Boys</h1>
     </header>
     <hr />
-  <div class="nav">
+  <nav>
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
     <a href="contactus.html">Contact Us</a>
-  </div>
+  </nav>
     <hr />
     <section>
         <img src="omnoms.gif">
-      <article id="Tasty Treats">
+      <article id="tastyTreats">
       <h2><em>Tasty Treats</em></h2>
         <table cellpadding="10">
           <tr>
@@ -56,8 +71,10 @@
       </article>
       <article id="drinks">
     <h2><em>Drinkz!</em></h2>
-    <img src="logonodog.png" height="250" width="250">
-    <img src="cocktailtransparent.png" height="350" width="250">
+    <div class="logos">
+    <!-- <img src="logonodog.png" height="250" width="250"> -->
+  </div>
+    <div id="drinkMenu">
     <table cellpadding="10">
           <tr>
                         <td><p>Woof Beer</p></td>
@@ -73,11 +90,20 @@
                         <td><p>Iced Tea</p></td>
                         <td><p>$1.25</p></td></tr> -->
                   </table>
+              </div>
+          <div class="logos">
+                <img src="cocktailtransparent.png" height="350" width="250">
+                <img src="logonodog.png" height="250" width="250">
+                <!-- attempting to flip image horizontally -->
+                <!-- <img src="cocktailtransparent.png" height="350" width="250" filter:FlipH> -->
+                <!-- okay that didn't work -->
+            </div>
                 </article>
             </section>
           <hr />
    <footer>
-    <p>123 Barking-Pup Lane, Ruff City, DG W00OOF Repawblic of Doggo</p>
+    <p>123 Barking-Pup Lane, Ruff City, DG W00OOF</p>
+      <p>Repawblic of Doggo</p>
     <p>1-844-GOOD-BOI</p>
         <a href="topsecret.html"><img src="boneicon.png" width="30" height="30" target="_blank"></a>
   </footer>

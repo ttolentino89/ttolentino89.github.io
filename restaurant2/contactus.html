@@ -3,17 +3,35 @@
     <title>The Goodest Boys</title>
     <link href="restaurantStyles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+<style>
+    /* body {
+      background-image:url("doghiring.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+} */
+
+#info {
+  width: 300;
+  height: 100;
+}
+
+fieldset {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+</style>
+
   </head>
   <body>
     <header>
       <h1>The Goodest Boys</h1>
     </header>
     <hr />
-<div class="nav">
+<nav>
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
     <a href="contactus.html">Contact Us</a>
-  </div>
+  </nav>
     <hr />
       <form action="submit.html" method="POST">
       <label for="firstName">Name:</label><br />
@@ -29,6 +47,7 @@
         <option value="feedback">Feedback</option>
         <option value="other">Other</option>
       </select>
+      <br />
        <fieldset>
       <label for="info">Additional Information</label> <br />
       <textarea id="info" name="info"></textarea>
@@ -60,12 +79,11 @@
           value="Friday">
           <label for="F"> Fr</label><br />
       </fieldset>
-     <fieldset>
        <button type="button">Send Request</button>
       </fieldset>
       <br />
       <br />
-      <img src="goodboytransparent.png" height="350" width="450">
+      <img src="goodboytransparent.png" height="350" width="475">
       <img src="cocktailtransparent.png" height="350" width="250">
     <footer>
      <br />
