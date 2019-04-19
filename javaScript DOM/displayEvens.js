@@ -4,6 +4,8 @@
 //   }
 // }
 
+//helpful link- http://www.tutorialsmade.com/javascript-find-odd-even-number/
+
 ///* //myNum = Number(myNum);
 //Number(myNum); this changes a string to a number, IMPORTANT!
 //console.log(Number(myNum) + 10) */
@@ -19,19 +21,24 @@ stepValue = Number(stepValue);
 
 //i = i + stepValue
 
-function errorMessages() {
-//Error message should be displayed if ending number is less than or equal to the starting number
-if (num1 >= num2) {
-  alert("Ending number cannot be greater than or equal to starting number.")
-}
-////Error message should be displayed if the step is not a positive number
-if (stepValue <= 0) {
-  alert("Step value cannot be less than or equal to zero.")
-  }
-}
+// function errorMessages() {
+// //Error message should be displayed if ending number is less than or equal to the starting number
+// if (num1 >= num2) {
+//   alert("Ending number cannot be greater than or equal to starting number.")
+//   }
+// ////Error message should be displayed if the step is not a positive number
+// if (stepValue <= 0) {
+//   alert("Step value cannot be less than or equal to zero.")
+//   }
+// if (typeof num1 === "string") || (typeof num2 === "string") || (typeof num3 === "string"){
+//        alert("Input must be a number.")
+//   }
 
 function displayEvens() {
   document.getElementById("answer").style.display = "block";
+  // for (let i = num1; i <= stepValue; i++) {
+  //   if(i % 2 === 0) {
+  //     document.getElementById("").innerHTML = "";
 }
 
 // function doEveything() {
