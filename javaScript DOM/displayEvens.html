@@ -3,19 +3,21 @@
 <head>
   <script type="text/JavaScript" src="displayEvens.js"></script>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <style>
+  #answer {
+  display: none;
+}
+  </style>
 </head>
 <body>
   <h1>Display Evens</h1>
   <label for="startingNumber">Starting Number</label><br />
-  <input type="text" id="num1" name ="num1"> <br />
+  <input type="number" id="num1" name ="num1"> <br />
   <label for="endingNumber">Ending Number</label><br />
-  <input type="text" id="num2" name="num2"> <br />
+  <input type="number" id="num2" name="num2"> <br />
   <label for="step">Step</label><br />
-  <input type="text" id="step" name="step"> <br /><br />
-    <button id="submit" id="submitButton" onClick="submitButton()">Submit</button>
+  <input type="number" id="step" name="step"> <br /><br />
+    <button id="submit" id="submitButton" onClick="displayEvens()">Submit</button>
+  <div id="answer"><p>Here are the even numbers:</p></div>
 </body>
 </html>
-
-//myNum = Number(myNum);
-//Number(myNum); this changes a string to a number, IMPORTANT!
-//console.log(Number(myNum) + 10)
