@@ -34,6 +34,10 @@ function displayEvens() {
   document.getElementById("answer").style.display = "block";
 }
 
+// function doEveything() {
+//   // errorMessages();
+//   displayEvens();
+// }
 //big hint from professor polk- you must use Number() to cast or convert input into numbers or else code will not work
 //<form onsubmit = "return doForm()"> doForm must return false
 
