@@ -10,35 +10,53 @@
 //Number(myNum); this changes a string to a number, IMPORTANT!
 //console.log(Number(myNum) + 10) */
 
-var num1 = document.getElementById("num1").value;
-num1 = Number(num1);
+function alert1() {
+  var num1 = document.getElementById("num1").value;
+  num1 = Number(num1);
+  var num2 = document.getElementById("num2").value;
+  num2 = Number(num2);
+  if (num1 >= num2) {
+    alert("Ending number cannot be less than or equal to starting number.")
+  }
+}
 
-var num2 = document.getElementById("num2").value;
-num2 = Number(num2);
+function alert2() {
+  var stepValue = document.getElementById("step").value;
+  stepValue = Number(stepValue);
+  if (stepValue <= 0) {
+    alert("Step value cannot be less than or equal to zero.")
+  }
+}
 
-var stepValue = document.getElementById("step").value;
-stepValue = Number(stepValue);
 
 //i = i + stepValue
 
-// function errorMessages() {
-// //Error message should be displayed if ending number is less than or equal to the starting number
-// if (num1 >= num2) {
-//   alert("Ending number cannot be greater than or equal to starting number.")
-//   }
-// ////Error message should be displayed if the step is not a positive number
-// if (stepValue <= 0) {
-//   alert("Step value cannot be less than or equal to zero.")
-//   }
-// if (typeof num1 === "string") || (typeof num2 === "string") || (typeof num3 === "string"){
-//        alert("Input must be a number.")
-//   }
+function checkNums(){
+  var num1 = document.getElementById("num1").value;
+  num1 = Number(num1);
+  var num2 = document.getElementById("num2").value;
+  num2 = Number(num2);
+  var stepValue = document.getElementById("step").value;
+  stepValue = Number(stepValue);
+  if (typeof num1 === "string") || (typeof num2 === "string") || (typeof stepValue === "string"){
+       alert("Input must be a number.")
+  }
+
+checkNums()
 
 function displayEvens() {
   document.getElementById("answer").style.display = "block";
-  // for (let i = num1; i <= stepValue; i++) {
-  //   if(i % 2 === 0) {
-  //     document.getElementById("").innerHTML = "";
+  var num1 = document.getElementById("num1").value;
+  num1 = Number(num1);
+  var num2 = document.getElementById("num2").value;
+  num2 = Number(num2);
+  var stepValue = document.getElementById("step").value;
+  stepValue = Number(stepValue);
+  // var evenNums = [];
+  // for (let i = num1; i < num2; i = i + stepValue) {
+  // if(i % 2 === 0) {
+  //   document.write(evenNums.push)
+  //    document.getElementByClass("evenNums").innerHTML = "";
 }
 
 // function doEveything() {
