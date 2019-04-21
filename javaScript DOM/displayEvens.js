@@ -57,7 +57,7 @@ function alert2() {
 //   for (let i = num1; i < num2; i = i + stepValue) {
 //     if(i % 2 === 0) {
 //       evenNum = evenNum + i;
-//   }
+//   }2
 // }
 //
 // document.write(findEvens())
@@ -70,18 +70,20 @@ function displayEvens() {
   num2 = Number(num2);
   var stepValue = document.getElementById("step").value;
   stepValue = Number(stepValue);
-  var evenNum = 0;
+  var evenNums = [];
   for (let i = num1; i <= num2; i++) {
     if(i % 2 !== 0) {
-      i = i++;
+      i++;
     } else {
-      evenNum = i;
-      document.getElementById("evenNums").innerHTML =  evenNum;
+      evenNums.push(i);
+      i = i + stepValue;
+      // document.getElementById("hereAreThe").innertext = "Here are the even numbers
+      // //   between " + num1 + " and " + num2 + " by " + stepValue + "</p>";
+      document.getElementById("evenNums").innerHTML =  evenNums;
       // document.write("the value of i is " + i + " ");
-      // document.write("the value of evenNum is " + evenNum + " ")
-      // document.getElementById("answer").style.display = "block";
+      // document.write("the value of evenNums is " + evenNums + " ")
         }
-  } return evenNum;
+  } return evenNums;
 }
 
 // document.getElementByClass("evenNums").innerHTML = "evenNum";
