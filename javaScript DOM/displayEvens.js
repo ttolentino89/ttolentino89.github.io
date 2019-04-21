@@ -31,18 +31,36 @@ function alert2() {
 
 //i = i + stepValue
 
-function checkNums(){
-  var num1 = document.getElementById("num1").value;
-  num1 = Number(num1);
-  var num2 = document.getElementById("num2").value;
-  num2 = Number(num2);
-  var stepValue = document.getElementById("step").value;
-  stepValue = Number(stepValue);
-  if (typeof num1 === "string") || (typeof num2 === "string") || (typeof stepValue === "string"){
-       alert("Input must be a number.")
-  }
+// function checkNums(){
+//   var num1 = document.getElementById("num1").value;
+//   num1 = Number(num1);
+//   var num2 = document.getElementById("num2").value;
+//   num2 = Number(num2);
+//   var stepValue = document.getElementById("step").value;
+//   stepValue = Number(stepValue);
+//   if (typeof num1 === "string") || (typeof num2 === "string") || (typeof stepValue === "string"){
+//        alert("Input must be a number.")
+//   }
+//
+// checkNums()
 
-checkNums()
+// var evenNums = [];
+//
+// function findEvens() {
+//   let evenNum;
+//   var num1 = document.getElementById("num1").value;
+//   num1 = Number(num1);
+//   var num2 = document.getElementById("num2").value;
+//   num2 = Number(num2);
+//   var stepValue = document.getElementById("step").value;
+//   stepValue = Number(stepValue);
+//   for (let i = num1; i < num2; i = i + stepValue) {
+//     if(i % 2 === 0) {
+//       evenNum = evenNum + i;
+//   }
+// }
+//
+// document.write(findEvens())
 
 function displayEvens() {
   document.getElementById("answer").style.display = "block";
@@ -52,12 +70,28 @@ function displayEvens() {
   num2 = Number(num2);
   var stepValue = document.getElementById("step").value;
   stepValue = Number(stepValue);
+  var evenNum = 0;
+  for (let i = num1; i <= num2; i++) {
+    if(i % 2 !== 0) {
+      i = i++;
+    } else {
+      evenNum = i;
+      document.getElementById("evenNums").innerHTML =  evenNum;
+      // document.write("the value of i is " + i + " ");
+      // document.write("the value of evenNum is " + evenNum + " ")
+      // document.getElementById("answer").style.display = "block";
+        }
+  } return evenNum;
+}
+
+// document.getElementByClass("evenNums").innerHTML = "evenNum";
+
+
   // var evenNums = [];
   // for (let i = num1; i < num2; i = i + stepValue) {
   // if(i % 2 === 0) {
   //   document.write(evenNums.push)
   //    document.getElementByClass("evenNums").innerHTML = "";
-}
 
 // function doEveything() {
 //   // errorMessages();
