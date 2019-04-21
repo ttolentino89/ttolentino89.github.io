@@ -27,7 +27,21 @@ function alert2() {
     alert("Step value cannot be less than or equal to zero.")
   }
 }
+  // if (stepValue == isNan(stepValue)) {
+  //   alert("Step value must be filled in with a number.")
+  // }
 
+// function errorMessages() {
+//   alert1();
+//   alert2();
+//   if (num1 == "" || isNan(num1)) {
+//     alert("Num1 must be filled in with a number.");
+//   if (num2 == "" || isNaN(num2)) {
+//     alert("Num2 must be filled in with a number.");
+//   if (stepValue == "" || isNaN(stepValue)) {
+//     alert("Num2 must be filled in with a number.");
+//   }
+// }
 
 //i = i + stepValue
 
@@ -70,6 +84,9 @@ function displayEvens() {
   num2 = Number(num2);
   var stepValue = document.getElementById("step").value;
   stepValue = Number(stepValue);
+  document.getElementById("firstNum").innerHTML = num1;
+  document.getElementById("secondNum").innerHTML = num2;
+  document.getElementById("increment").innerHTML = stepValue;
   var evenNums = [];
   for (let i = num1; i <= num2; i++) {
     if(i % 2 !== 0) {
@@ -77,9 +94,9 @@ function displayEvens() {
     } else {
       evenNums.push(i);
       i = i + stepValue;
-      // document.getElementById("hereAreThe").innertext = "Here are the even numbers
-      // //   between " + num1 + " and " + num2 + " by " + stepValue + "</p>";
       document.getElementById("evenNums").innerHTML =  evenNums;
+      // document.getElementById("hereAreThe").innerHTML = "<p>Here are the even numbers
+      //   between " + num1 + " and " + num2 + " by " + stepValue + "</p>";
       // document.write("the value of i is " + i + " ");
       // document.write("the value of evenNums is " + evenNums + " ")
         }
