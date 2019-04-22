@@ -16,6 +16,7 @@
 </head>
 <body>
   <h1>Display Evens</h1>
+  <div id="userInput" onChange="needsNum()">
   <label for="startingNumber">Starting Number</label><br />
   <input type="text" id="num1" name ="num1"> <br />
   <label for="endingNumber">Ending Number</label><br />
@@ -23,9 +24,10 @@
   <label for="step">Step</label><br />
   <input type="text" id="step" name="step" onChange="alert2()"> <br /><br />
     <button id="submit" id="submitButton" onClick="displayEvens()">Submit</button>
+  </div>
   <div id="answer">
   <p>Here are the even numbers between <span id="firstNum"></span> and
-    <span id="secondNum"></span> by <span id="increment"></span>.</p>
+    <span id="secondNum"></span> by <span id="increment"></span>:</p>
   <!-- <span id="hereAreThe"></span> -->
   <span id="evenNums"></span>
   </div>
