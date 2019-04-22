@@ -38,3 +38,8 @@ return gameMoney
 //     document.getElementById("answer").style.display = "block";
 //
 // }
+
+//helpful hints
+//<form onSubmit = "return myFunction">
+//startingBet = 20;
+//highestAmount = startingBet
