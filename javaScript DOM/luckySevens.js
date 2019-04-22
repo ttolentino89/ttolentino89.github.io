@@ -43,3 +43,5 @@ return gameMoney
 //<form onSubmit = "return myFunction">
 //startingBet = 20;
 //highestAmount = startingBet
+//while(money > 0)
+//{ roll the dice}
