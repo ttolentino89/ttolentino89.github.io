@@ -23,15 +23,15 @@
 //     }
 //   }
 
-// function alert1(){
-//   var num1 = document.getElementById("num1").value;
-//   num1 = Number(num1);
-//   if (isNaN(num1)){
-//     alert("Starting value must be a number.")
-//   }
-// }
+function alert1(){
+  var num1 = document.getElementById("num1").value;
+  num1 = Number(num1);
+  if (isNaN(num1)){
+  alert("Starting value must be a number.")
+  }
+}
 
-function alert1() {
+function alert2() {
   var num1 = document.getElementById("num1").value;
   num1 = Number(num1);
   var num2 = document.getElementById("num2").value;
@@ -39,8 +39,8 @@ function alert1() {
   if (num1 >= num2) {
     alert("Ending number cannot be less than or equal to starting number.")
   }
-  if (isNaN(num1) || isNan(num2)){
-    alert("Value must be a number.")
+  if (isNaN(num2)){
+    alert("Ending value must be a number.")
   }
   // if (isNaN(num2)){
   //   alert("Ending value must be a number.")
@@ -50,7 +50,7 @@ function alert1() {
   // }
 }
 
-function alert2() {
+function alert3() {
   var stepValue = document.getElementById("step").value;
   stepValue = Number(stepValue);
   if (stepValue <= 0) {
@@ -59,9 +59,37 @@ function alert2() {
   if (isNaN(stepValue)){
     alert("Step value must be a number.")
   }
-
 }
 
+function displayEvens() {
+  document.getElementById("answer").style.display = "block";
+  var num1 = document.getElementById("num1").value;
+  num1 = Number(num1);
+  var num2 = document.getElementById("num2").value;
+  num2 = Number(num2);
+  var stepValue = document.getElementById("step").value;
+  stepValue = Number(stepValue);
+  document.getElementById("firstNum").innerHTML = num1;
+  document.getElementById("secondNum").innerHTML = num2;
+  document.getElementById("increment").innerHTML = stepValue;
+  var evenNums = [];
+  for (let i = num1; i <= num2; i++) {
+    if(i % 2 !== 0 || i <= 1) {
+      i++;
+      // i = i + stepValue;
+    } else {
+      evenNums.push(i);
+      i = i + stepValue;
+      document.getElementById("evenNums").innerHTML =  evenNums;
+      // document.getElementById("hereAreThe").innerHTML = "<p>Here are the even numbers
+      //   between " + num1 + " and " + num2 + " by " + stepValue + "</p>";
+      // document.write("the value of i is " + i + " ");
+      // document.write("the value of evenNums is " + evenNums + " ")
+        }
+  } return evenNums;
+}
+
+function 
 // function typeOfNaN() {
 //   var num1 = document.getElementById("num1").value;
 //   num1 = Number(num1);
@@ -127,34 +155,6 @@ function alert2() {
 // }
 //
 // document.write(findEvens())
-
-function displayEvens() {
-  document.getElementById("answer").style.display = "block";
-  var num1 = document.getElementById("num1").value;
-  num1 = Number(num1);
-  var num2 = document.getElementById("num2").value;
-  num2 = Number(num2);
-  var stepValue = document.getElementById("step").value;
-  stepValue = Number(stepValue);
-  document.getElementById("firstNum").innerHTML = num1;
-  document.getElementById("secondNum").innerHTML = num2;
-  document.getElementById("increment").innerHTML = stepValue;
-  var evenNums = [];
-  for (let i = num1; i <= num2; i++) {
-    if(i % 2 !== 0 || i <= 1) {
-      i++;
-      // i = i + stepValue;
-    } else {
-      evenNums.push(i);
-      i = i + stepValue;
-      document.getElementById("evenNums").innerHTML =  evenNums;
-      // document.getElementById("hereAreThe").innerHTML = "<p>Here are the even numbers
-      //   between " + num1 + " and " + num2 + " by " + stepValue + "</p>";
-      // document.write("the value of i is " + i + " ");
-      // document.write("the value of evenNums is " + evenNums + " ")
-        }
-  } return evenNums;
-}
 
 // document.getElementByClass("evenNums").innerHTML = "evenNum";
 
