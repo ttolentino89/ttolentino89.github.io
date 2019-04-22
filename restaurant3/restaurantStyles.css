@@ -1,0 +1,67 @@
+body {
+  background-color: oldlace;
+  /* background-image:url("picnic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
+  /* margin: 0 auto; */
+}
+
+/* img {
+  padding-top: 60px;
+} */
+
+nav
+{
+  /* margin-top: 20px; */
+  text-align:left;
+  padding: 50px;
+}
+
+a:hover {
+font-size: x-large;
+}
+
+a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/* .mainboy
+{
+  margin-top:40px;
+  padding-top: 60px;
+} */
+
+
+.right-content {
+  text-align:right;
+  margin-right: 20px;
+}
+
+hr {
+  border: none;
+}
+
+header {
+  /* margin-top: 20px;
+  margin-right: 20px; */
+  text-align: right;
+  padding-right: 50px;
+}
+
+/* header a:hover {
+  background-color: #fef9ff;
+  color: #5b7d87;
+}
+
+header a:visited {
+    color: #e4c3ad;
+} */
+
+footer {
+  /* margin-top: 50px; */
+  text-align: center;
+}
