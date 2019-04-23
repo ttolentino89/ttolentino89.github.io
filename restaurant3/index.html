@@ -28,23 +28,67 @@
    }
 }
 
+#small-logo {
+  display: none;
+}
+
 @media (max-width:1100px) {
   #small-logo {
-   display: block
+   display: block;
    }
 }
 
+  /* #hidden-boy {
+    display: none;
+  }
+}
+
+@media (max-width:1100px) {
+  #hidden-boy {
+    display: block;
+  }
+} */
+
+@media (min-width: 600px) and (max-width:1100px) {
+  body {
+    background-image:url("doghiring.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+}
+
+@media (min-width: 600px) and (max-width:1100px) {
+  .right-content {
+    margin-left: 400px;
+   }
+}
+
+@media (min-width: 600px) and (max-width:1100px) {
+  nav {
+  text-align: right;
+   }
+}
+
+@media (min-width: 600px) and (max-width:1100px) {
+  h1 {
+  text-align: center;
+   }
+}
+
+
+
+/* fixing link hover size so it won't interfere with smaller screen size */
 @media (max-width: 780px) {
-  nav.text {
-    display:none;
+  a:hover {
+    font-size: medium;
   }
 }
 
   /* background-attachment: fixed; */
 
-
   h1 {
     text-align: right;
+    padding-top: 20px;
     /* background-attachment: fixed; */
   }
 }
@@ -55,9 +99,10 @@
   margin-left: 100px
 }
 
-#small-logo {
+#hidden-boy {
   display: none;
 }
+
 </style>
   <body>
     <header class="upper">
@@ -68,7 +113,7 @@
   <nav>
     <a href="index.html"><img src="doghouse.png" width="50" height="50">Home</a>
     <a href="menu.html" target="_blank"><img src="boneicon.png" width="40" height="40">Menu</a>
-    <a href="contactus.html" target="_blank"><img src="phone.png" width="40" height="40">Contact Us</a>
+    <a href="contactus.html" target="_blank"><img src="phone.png" width="40" height="40">Contact</a>
   </nav>
     <hr />
     <!-- these "br /s" help position the dog onto to the grass so it doesn't look like he's floating. -->
@@ -79,7 +124,7 @@
     <img src="goodboytransparent.png">
   </div>
     <div id="small-logo">
-      <img src="cocktailtransparent.png">
+      <img src="logonodog.png">
     </div>
     <br />
   </div>
@@ -87,6 +132,7 @@
     ONLY THE GOODEST BOYS MAKE THE GOODEST SAMMICHES because we love you!
     <p>Let's go to the park! IS THAT A TENNIS BALL?</p>
     <p>WHERE DID IT GO :O you are so magical!</p>
+  <div id="hidden-boy"><img src="cocktailtransparent.png" height="350" width="250"></div>
    <br />
    <hr />
  </div>
