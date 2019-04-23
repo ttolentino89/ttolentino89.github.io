@@ -27,11 +27,7 @@ function alert1(){
   var num1 = document.getElementById("num1").value;
   num1 = Number(num1);
   if (isNaN(num1)){
-<<<<<<< HEAD
-  alert("Starting value must be a number.")
-=======
     alert("Starting value must be a number.")
->>>>>>> 30d6ad0a71598ccaa1a277fbe9c0fe1efebb859f
   }
 }
 
@@ -63,37 +59,9 @@ function alert3() {
   if (isNaN(stepValue)){
     alert("Step value must be a number.")
   }
+
 }
 
-function displayEvens() {
-  document.getElementById("answer").style.display = "block";
-  var num1 = document.getElementById("num1").value;
-  num1 = Number(num1);
-  var num2 = document.getElementById("num2").value;
-  num2 = Number(num2);
-  var stepValue = document.getElementById("step").value;
-  stepValue = Number(stepValue);
-  document.getElementById("firstNum").innerHTML = num1;
-  document.getElementById("secondNum").innerHTML = num2;
-  document.getElementById("increment").innerHTML = stepValue;
-  var evenNums = [];
-  for (let i = num1; i <= num2; i++) {
-    if(i % 2 !== 0 || i <= 1) {
-      i++;
-      // i = i + stepValue;
-    } else {
-      evenNums.push(i);
-      i = i + stepValue;
-      document.getElementById("evenNums").innerHTML =  evenNums;
-      // document.getElementById("hereAreThe").innerHTML = "<p>Here are the even numbers
-      //   between " + num1 + " and " + num2 + " by " + stepValue + "</p>";
-      // document.write("the value of i is " + i + " ");
-      // document.write("the value of evenNums is " + evenNums + " ")
-        }
-  } return evenNums;
-}
-
-function 
 // function typeOfNaN() {
 //   var num1 = document.getElementById("num1").value;
 //   num1 = Number(num1);
@@ -160,8 +128,6 @@ function
 //
 // document.write(findEvens())
 
-<<<<<<< HEAD
-=======
 function displayEvens() {
   document.getElementById("answer").style.display = "block";
   var num1 = document.getElementById("num1").value;
@@ -190,7 +156,6 @@ function displayEvens() {
   } return evenNums;
 }
 
->>>>>>> 30d6ad0a71598ccaa1a277fbe9c0fe1efebb859f
 // document.getElementByClass("evenNums").innerHTML = "evenNum";
 
 
