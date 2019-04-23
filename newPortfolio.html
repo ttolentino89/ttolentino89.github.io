@@ -6,14 +6,23 @@ Most recent revision: 4/22/19
 -->
 <html lang ="en">
   <head>
+    <!-- adding a new javascript file -->
+    <script type="text/JavaScript" src="newPortfolio.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Trisha's Portfolio</title>
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Poiret+One|Rock+Salt" rel="stylesheet">
     <link href="newStyle.css" rel="stylesheet" type="text/css">
         <title>Trisha's Portfolio</title>
     <style>
+    #first-section {
+      display: none
+    }
+    button {
+      background-color: black;
+      border: none;
+    }
     </style>
   </head>
   <body>
@@ -42,22 +51,27 @@ Most recent revision: 4/22/19
     </nav>
     <!-- <hr style="width: 50%; border: 2px solid blueviolet;" /> -->
     <section>
+      <h2><em>Biography</em></h2>
+    <!-- <button id="bio" onClick="showMe()">An abridged version of the real T.</button>
+     <div class="hide-first" id="first-section"> -->
       <article class="border" id="about-me">
-        <h2><em>Biography</em></h2>
-          <!-- <img src = "images/pusheendj.jpg" alt="pusheen dj"
-          width="250" style="float:left" /> -->
-        <div class="right-content">
+          <img src = "profile.jpg" alt="Trish"
+          width="200" height="300"style="float:left" />
+        <div class="right-content" style="float:right" />
         <p>Currently a member of Cohort 7 of LaGuardia TechHire and Software Guild Apprentice.
         Career interests include product management & design, full stack web development
         and QA engineering. Trish currently lives in Jersey City, NJ with her partner John and their two
       dogs (which totally don't exist because their landlord doesn't allow pets.)</p>
       </div>
+    </div>
+<br />
+<br />
         <div class="clear-float"></div>
       </article>
       <article id="past-experiences">
       <h2><em>Résumé</em></h2>
-        <img src = "images/pusheendj.jpg" alt="pusheen dj"
-        width="250" />
+        <!-- <img src = "images/pusheendj.jpg" alt="pusheen dj"
+        width="250" /> -->
         <div class="right-content">
         <table>
           <caption>Employment History (2014-2019)</caption>
@@ -88,11 +102,20 @@ Most recent revision: 4/22/19
         </table>
       </div>
       <div class="clear-float"></div>
+      <br />
+      <br />
       </article>
+      <!-- <div class="accordion" id="accordionExample">
+    <div class="card">
+        <div class="card-header" id="portfolio01">
+            <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                aria-expanded="false" aria-controls="collapseOne"> -->
       <article id="hobbies">
       <h2><em>Fun Facts!</em></h2>
-          <img src = "images/pusheendj.jpg" alt="pusheen dj"
-          width="250" style="float:left" />
+      <br />
+          <!-- <img src = "images/pusheendj.jpg" alt="pusheen dj"
+          width="250" style="float:left" /> -->
      <div class="right-content">
           <ul>
             <li>Favorite Record Labels</li>

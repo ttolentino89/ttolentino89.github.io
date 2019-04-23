@@ -74,14 +74,6 @@ tbody tr:nth-child(odd) {
   background-color: #7C7A7A;
 }
 
-
-
-/* nav {
-  border-top: 3px dashed #526a7b;
-  border-bottom: 3px dashed #546a7b;
-  margin-top: 4px;
-} */
-
 .clear-float {
     clear:both;
 }
