@@ -16,8 +16,8 @@
 <body>
   <h1>Lucky Sevens</h1>
   <!-- <div id="userInput" onChange="needsNum()"> -->
-  <label for="startingNumber">Starting Bet:</label><br />
-  <input type="text" id="startingBet" name ="startingBet" onChange="placeBet()"> <br />
+  <label for="starting-bet">Starting Bet:</label><br />
+  <input type="text" id="starting-bet" name ="starting-bet" onChange="placeBet()"> <br />
 <br />
     <button id="submit" id="submitButton" onClick="rollDice()">Play</button>
   <br />
@@ -35,19 +35,19 @@
         <tbody>
             <tr>
                 <td>Starting Bet</td>
-                <td>$<span id=""></span></td>
+                <td>$<span id="starting-number"></span></td>
             </tr>
             <tr>
                 <td>Total Rolls Before Bankruptcy</td>
-                <td><span id=""></span></td>
+                <td><span id="max-rolls"></span></td>
             </tr>
             <tr>
                 <td>Highest Amount Won</td>
-                <td>$<span id=""></span></td>
+                <td>$<span id="max-money"></span></td>
             </tr>
             <tr>
                 <td>Roll Count at Highest Amount Won</td>
-                <td><span id=""></span></td>
+                <td><span id="roll-count"></span></td>
             </tr>
         </tbody>
     </table>
