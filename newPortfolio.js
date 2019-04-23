@@ -1,5 +1,5 @@
 function showMe() {
-    var x = document.getElementById("hide-first");
+    var x = document.getElementById("first-section");
     if (x.style.display === "none") {
       x.style.display = "block";
 }

@@ -19,13 +19,31 @@ Most recent revision: 4/22/19
     <link href="newStyle.css" rel="stylesheet" type="text/css">
         <title>Trisha's Portfolio</title>
     <style>
+/* compensating for link/header overlap on smaller/mobile size screen */
+    @media (max-width: 780px) {
+      nav {
+        padding-top: 90px;
+        padding-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 780px) {
+      #profile-pic {
+        display: none;
+      }
+    }
+
     #first-section {
-      display: none
+      padding: 30px;
     }
     button {
       background-color: black;
       border: none;
     }
+/*
+    h1 {
+      padding-left: 20px;
+    } */
     </style>
   </head>
   <body>
@@ -55,17 +73,17 @@ Most recent revision: 4/22/19
     <!-- <hr style="width: 50%; border: 2px solid blueviolet;" /> -->
     <section>
       <h2><em>Biography</em></h2>
-    <!-- <button id="bio" onClick="showMe()">An abridged version of the real T.</button>
-     <div class="hide-first" id="first-section"> -->
+    <!-- <button id="bio" onClick="showMe()">An abridged version of the real T.</button> -->
+     <div class="hide-first" id="first-section">
       <article class="border" id="about-me">
-          <img src = "profile.jpg" alt="Trish"
-          width="200" height="300"style="float:left" />
-        <div class="right-content" style="float:right" />
+          <span id="profile-pic"><img src = "profile.jpg" alt="Trish"
+          width="200" height="300" style="float:right" /></span>
+        <!-- <div class="right-content" style="float:right" /> -->
         <p>Currently a member of Cohort 7 of LaGuardia TechHire and Software Guild Apprentice.
         Career interests include product management & design, full stack web development
         and QA engineering. Trish currently lives in Jersey City, NJ with her partner John and their two
       dogs (which totally don't exist because their landlord doesn't allow pets.)</p>
-      </div>
+      <!-- </div> -->
     </div>
 <br />
 <br />
@@ -120,6 +138,7 @@ Most recent revision: 4/22/19
           <!-- <img src = "images/pusheendj.jpg" alt="pusheen dj"
           width="250" style="float:left" /> -->
      <div class="right-content">
+       <span
           <ul>
             <li>Favorite Record Labels</li>
               <ol>
