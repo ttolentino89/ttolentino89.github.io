@@ -1,9 +1,27 @@
 <html lang ="en">
   <head>
     <title>The Goodest Boys</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="restaurantStyles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 <style>
+@media (min-width:1100px) {
+  body {
+    background-image:url("doghiring.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width:1100px) {
+  nav{
+    text-align: right;
+  }
+}
     /* body {
       background-image:url("doghiring.jpg");
       background-size: cover;
@@ -13,11 +31,22 @@
 #info {
   width: 300;
   height: 100;
+  /* padding: 10px; */
 }
 
 fieldset {
-  margin-left: 50px;
-  margin-right: 50px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
+  margin: auto;
+}
+
+@media (max-width: 780px) {
+  fieldset {
+    border: thin solid black;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 }
 </style>
 
@@ -27,11 +56,11 @@ fieldset {
       <h1>The Goodest Boys</h1>
     </header>
     <hr />
-<nav>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="contactus.html">Contact Us</a>
-  </nav>
+    <nav>
+      <a href="index.html"><img src="doghouse.png" width="50" height="50">Home</a>
+      <a href="menu.html" target="_blank"><img src="boneicon.png" width="40" height="40">Menu</a>
+      <a href="contactus.html" target="_blank"><img src="phone.png" width="40" height="40">Contact</a>
+    </nav>
     <hr />
       <form action="submit.html" method="POST">
       <label for="firstName">Name:</label><br />
@@ -53,7 +82,7 @@ fieldset {
       <textarea id="info" name="info"></textarea>
      </fieldset>
       <fieldset>
-      <legend>I will give the good bois belly rubs and ear scritches when I visit</legend><br />
+      <label for="question">I will give the good bois belly rubs and ear scritches when I visit</label><br />
         <input type="radio" id="choice1" name="questionnaire"
           value="yes">
           <label for="choice1">Yes</label><br />
@@ -62,7 +91,7 @@ fieldset {
           <label for="choice2">Heck Yes!</label><br />
       </fieldset>
               <fieldset>
-      <legend>Best day to contact</legend><br />
+      <label for="best-day">Best day to contact</label><br />
         <input type="checkbox" id="monday" name="day"
           value= "Monday">
           <label for="M">M</label><br />
