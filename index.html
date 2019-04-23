@@ -7,10 +7,46 @@ Most recent revision: 4/12/19
 -->
 <html lang ="en">
   <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Poiret+One|Rock+Salt" rel="stylesheet">
+  <link href="newStyle.css" rel="stylesheet" type="text/css">
     <title>Trisha's Portfolio</title>
   </head>
 <style>
+
+/* this adds a black background to divs to offset conflicting background image */
+@media (max-width: 1000px) {
+   .links {
+     background: RGB(0, 0, 0, .7)
+     /* margin: 10px; */
+   }
+ }
+
+ @media (max-width: 1000px) {
+    .projects {
+      background: RGB(0, 0, 0, .7)
+      /* margin: 10px; */
+    }
+  }
+  /* this will apply for devices less than 768 pixels wide */
+/* @media (max-width:767px) {
+  .name {
+    display: none;
+  } */
+
+  @media (max-width:767px) {
+    .links {
+      margin-top: 20px;
+    }
+}
+
+    /* @media (max-width:767px) {
+      h1 {
+        color: white;
+      } */
 
 body {
 font-family: 'Rock Salt', cursive;
@@ -44,10 +80,12 @@ padding-right: 30px;
 
 .links {
   float: left;
+  /* padding-top: 20px; */
 }
 
 .projects {
   float: right;
+  padding-top: 10px;
 }
 
 a {
