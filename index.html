@@ -37,16 +37,18 @@ Most recent revision: 4/12/19
     display: none;
   } */
 
-  @media (max-width:767px) {
+  @media (max-width:600px) {
     .links {
       margin-top: 20px;
-      background: RGB(0, 0, 0, 1)
+      background: RGB(0, 0, 0, 1);
+      text-align: left;
     }
   }
   @media (max-width:600px) {
     .projects {
       margin-top: 20px;
       background: RGB(0, 0, 0, 1);
+      text-align: left;
       /* float: right; */
     }
   }
@@ -61,6 +63,19 @@ Most recent revision: 4/12/19
       background: RGB(0, 0, 0, 1)
     }
 }
+
+/* removing bullets for lists during mobile view */
+ @media (max-width:600px) {
+    ul {
+      list-style-type: none;
+    }
+  }
+
+   @media (max-width:600px) {
+    ol {
+      list-style-type: none;
+    }
+  }
 
     /* @media (max-width:767px) {
       h1 {

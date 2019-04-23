@@ -12,11 +12,13 @@ body {
   padding-top: 60px;
 } */
 
-nav
-{
+nav {
   /* margin-top: 20px; */
   text-align:left;
   padding: 50px;
+}
+a:link {
+text-decoration: none;
 }
 
 a:hover {

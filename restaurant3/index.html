@@ -13,16 +13,50 @@
   </head>
   <style>
   /*these rules will override the external style sheet*/
+  @media (min-width:1100px) {
   body {
-background-image:url("picnic.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-/* background-attachment: fixed; */
+    background-image:url("picnic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+  }
 }
+
+@media (max-width:1100px) {
+  #main-logo {
+  display: none;
+   }
+}
+
+@media (max-width:1100px) {
+  #small-logo {
+   display: block
+   }
+}
+
+@media (max-width: 780px) {
+  nav.text {
+    display:none;
+  }
+}
+
+  /* background-attachment: fixed; */
+
+
+  h1 {
+    text-align: right;
+    /* background-attachment: fixed; */
+  }
+}
+
 
 /*moving dog a little bit the the right so it looks like he's on the grass*/
 .mainboy {
   margin-left: 100px
+}
+
+#small-logo {
+  display: none;
 }
 </style>
   <body>
@@ -32,17 +66,21 @@ background-size: cover;
     </header>
     <hr />
   <nav>
-    <a href="index.html">Home</a>
-      <!-- <img src="doghouse.png" width="40" height="40"> -->
-    <a href="menu.html" target="_blank">Menu</a>
-    <a href="contactus.html" target="_blank">Contact Us</a>
+    <a href="index.html"><img src="doghouse.png" width="50" height="50">Home</a>
+    <a href="menu.html" target="_blank"><img src="boneicon.png" width="40" height="40">Menu</a>
+    <a href="contactus.html" target="_blank"><img src="phone.png" width="40" height="40">Contact Us</a>
   </nav>
     <hr />
     <!-- these "br /s" help position the dog onto to the grass so it doesn't look like he's floating. -->
-    <br />
-    <br />
+    <!-- <br />
+    <br /> -->
   <div class="mainboy">
+    <div id="main-logo">
     <img src="goodboytransparent.png">
+  </div>
+    <div id="small-logo">
+      <img src="cocktailtransparent.png">
+    </div>
     <br />
   </div>
   <div class="right-content">
