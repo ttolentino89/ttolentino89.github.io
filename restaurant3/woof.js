@@ -1,4 +1,4 @@
-//displays message when inquiry received
+//reveals message when inquiry received
 function thanksFren() {
   document.getElementById("thanks-fren").style.display = "block";
 }
