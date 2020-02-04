@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway|Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1>Hipster Maker</h1>
+      <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#make">Make New Hipster</a>
+  <a href="#about">About</a>
+  <a href="mailto:awful.millenial@makeahipster.com">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="burgerTime()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+</header>
+    <div id="intro">
+    <p>Welcome to the faux millenial maker, where everyone has better taste in music than you because
+        “you’ve never heard of it anyway.”</p>
+        <p>Click the button below to get started!</p>
+    <br />
+    </div>
+    <button id="begin" onclick="hideInstructions()">Let's Go</button>
+</div>
+<div id="make">
+<!-- <button id="create" onclick="hideOptions()">Make a Millenial</button> -->
+</div>
+<div id="display-result"></div>
+<section class="show-content">
+</section>
+<script src="js/make.js"></script>
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
